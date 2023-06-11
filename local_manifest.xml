@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- Remotes -->
+    <remote name="ak-gh"
+            fetch="https://github.com/ayushk1804/"
+            clone-depth="1" />
+
+    <remote name="me-hub"
+            fetch="https://github.com/AnkitSavani111/"
+            clone-depth="1" />
+
+    <remote name="me-lab"
+            fetch="https://gitlab.com/AnkitSavani111/"
+            clone-depth="1" />
+
+    <remote name="madmax"
+            fetch="https://gitlab.com/madmax7896/"
+            clone-depth="1" />
+
+    <remote name="realking"
+            fetch="https://github.com/Rohail33/"
+            clone-depth="1" />
+
+ <!-- Trees -->
+ <project path="device/xiaomi/munch" name="android_device_xiaomi_munch" remote="ak-gh" revision="blaze" />
+ <project path="vendor/xiaomi/munch" name="android_vendor_xiaomi_munch" remote="madmax" revision="arrow-13.1" />
+ <project path="device/xiaomi/sm8250-common" name="android_device_xiaomi_sm8250-common" remote="me-hub" revision="Evolution-X-tiramisu" />
+ <project path="vendor/xiaomi/sm8250-common" name="android_vendor_xiaomi_sm8250-common" remote="madmax" revision="arrow-13.1" />
+ <project path="kernel/xiaomi/sm8250" name="Realking_kernel_sm8250" remote="realking" revision="non-ksu" />
+
+  <!-- Clang -->
+ <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="me-lab" revision="master" clone-depth="1" />
+ <project path="prebuilts/clang/host/linux-x86/clang-zyc" name="zyc_clang-16" remote="me-lab" revision="main" clone-depth="1"/>
+
+ <!-- Packages -->
+ <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="me-lab" revision="master" clone-depth="1" />
+
+</manifest>
